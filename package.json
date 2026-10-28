@@ -1,17 +1,27 @@
-{
+﻿{
   "name": "curl2browser",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "description": "Cross-platform CLI tool that renders curl HTML responses in a browser",
+  "main": "curlp.js",
   "type": "commonjs",
-  "dependencies": {
-    "express": "^5.3.0"
+  "scripts": {
+    "start": "node curlp.js",
+    "test": "node --check curlp.js && node --check app.js"
   },
-  "devDependencies": {
+  "keywords": [
+    "curl",
+    "browser",
+    "html",
+    "cli",
+    "playwright",
+    "cross-platform"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
     "playwright": "^1.64.1"
   }
 }
